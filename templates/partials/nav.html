@@ -1,0 +1,9 @@
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+{% for item in cms.index %}
+<li><a href="#{{ item.name|replace(' ', '_', 'g') }}" >{{ item.name }}</a></li>
+							{% endfor %}
+						</ul>
+					</nav>

@@ -1,0 +1,30 @@
+{# ------------------------------------------------------- #}
+{# ONE OFF VIEW generic #}
+{# This page can use any data from http:localhost:2000/cms/#/form/generic/ #}
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+{# ------------------------------------------------------- #}
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{# This sets our page <title>. It will append this generic's name to the site title defined in base.html #}
+{% block title %}{% parent %} - {{ cms.generic.name }}{% endblock %}
+{% block header %}
+<header id="header">
+	<h1>{{ cms.generic.name }}</h1>
+	<p>{{ cms.generic.subheading }}</p>
+</header>
+{% endblock %}
+{% block nav %}
+{% endblock %}
+{% block content %}
+<div id="main">
+	<!-- Content -->
+	<section id="content" class="main">
+		<span class="image main"><img src="{{ cms.generic.image.url }}" /></span>
+        {{ cms.generic.body|safe }}
+	</section>
+</div>	
+{% endblock %}
