@@ -1,0 +1,787 @@
+{
+  "articles": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "image",
+        "hidden": false,
+        "label": "Image",
+        "locked": false,
+        "name": "image",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "relation",
+        "hidden": false,
+        "label": "Authors",
+        "locked": false,
+        "meta": {
+          "contentTypeId": "author",
+          "reverseName": "articles_authors"
+        },
+        "name": "authors",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "relation",
+        "hidden": false,
+        "label": "Tags",
+        "locked": false,
+        "meta": {
+          "contentTypeId": "tags",
+          "reverseName": "articles"
+        },
+        "name": "tags",
+        "placeholder": "",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textarea",
+        "hidden": false,
+        "label": "Deck",
+        "locked": false,
+        "name": "deck",
+        "placeholder": "",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "wysiwyg",
+        "hidden": false,
+        "label": "Body",
+        "locked": false,
+        "meta": {
+          "image": true,
+          "javascript": true,
+          "link": true,
+          "quote": true,
+          "table": true,
+          "video": true
+        },
+        "name": "body",
+        "placeholder": "",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Slug",
+        "locked": true,
+        "name": "slug",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "customUrls": {
+      "listUrl": "#"
+    },
+    "individualMD5": "6eb892c46eee9bd571a9a8d5cd737f07",
+    "listMD5": "9f73e37b5abc52015155bf538437c7fa",
+    "name": "articles",
+    "oneOff": false
+  },
+  "author": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "image",
+        "hidden": false,
+        "label": "Image",
+        "locked": false,
+        "name": "image",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "markdown",
+        "hidden": false,
+        "label": "Bio",
+        "locked": false,
+        "name": "bio",
+        "placeholder": "",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "relation",
+        "hidden": false,
+        "label": "Articles (Authors)",
+        "locked": false,
+        "meta": {
+          "contentTypeId": "articles",
+          "reverseName": "authors"
+        },
+        "name": "articles_authors",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Slug",
+        "locked": true,
+        "name": "slug",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "individualMD5": "294368b64394491d985d7d3b7ef51c97",
+    "listMD5": "fb991489dccda1b58f703a291f2dd51f",
+    "name": "author",
+    "oneOff": false
+  },
+  "footer": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "wysiwyg",
+        "hidden": false,
+        "label": "content-left",
+        "locked": false,
+        "meta": {
+          "image": true,
+          "javascript": true,
+          "link": true,
+          "quote": true,
+          "table": true,
+          "video": true
+        },
+        "name": "contentleft",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "wysiwyg",
+        "hidden": false,
+        "label": "content-right",
+        "locked": false,
+        "meta": {
+          "image": true,
+          "javascript": true,
+          "link": true,
+          "quote": true,
+          "table": true,
+          "video": true
+        },
+        "name": "contentright",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Slug",
+        "locked": true,
+        "name": "slug",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "copyright",
+        "locked": false,
+        "name": "copyright",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "name": "footer",
+    "oneOff": true,
+    "oneOffMD5": "b7edd933cca742827ebb52b227e5a97f"
+  },
+  "generic": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "sub-heading",
+        "locked": false,
+        "name": "subheading",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "image",
+        "hidden": false,
+        "label": "Image",
+        "locked": false,
+        "name": "image",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "wysiwyg",
+        "hidden": false,
+        "label": "body",
+        "locked": false,
+        "meta": {
+          "image": true,
+          "javascript": true,
+          "link": true,
+          "quote": true,
+          "table": true,
+          "video": true
+        },
+        "name": "body",
+        "placeholder": "",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Slug",
+        "locked": true,
+        "name": "slug",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "layout",
+        "hidden": false,
+        "label": "Page Layout",
+        "locked": false,
+        "meta": {
+          "defaultValue": "test.html",
+          "options": [
+            {
+              "label": "None",
+              "value": ""
+            },
+            {
+              "label": "Layout",
+              "value": "layout.html"
+            },
+            {
+              "label": "test",
+              "value": "test.html"
+            }
+          ]
+        },
+        "name": "page_layout",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "name": "generic",
+    "oneOff": true,
+    "oneOffMD5": "dde5214d0d651f872b8e3cf3b56a76c4"
+  },
+  "header": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "image",
+        "hidden": false,
+        "label": "Image",
+        "locked": false,
+        "name": "image",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "heading",
+        "locked": false,
+        "name": "heading",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textarea",
+        "hidden": false,
+        "label": "sub-heading",
+        "locked": false,
+        "name": "subheading",
+        "placeholder": "",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Slug",
+        "locked": true,
+        "name": "slug",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "name": "header",
+    "oneOff": true,
+    "oneOffMD5": "d53958168fa6b38ad6e0e1deaae0d17c"
+  },
+  "index": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "heading",
+        "locked": false,
+        "name": "heading",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textarea",
+        "hidden": false,
+        "label": "sub-heading",
+        "locked": false,
+        "name": "subheading",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "image",
+        "hidden": false,
+        "label": "Image",
+        "locked": false,
+        "name": "image",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "wysiwyg",
+        "hidden": false,
+        "label": "WYSIWYG text",
+        "locked": false,
+        "meta": {
+          "image": true,
+          "javascript": true,
+          "link": true,
+          "quote": true,
+          "table": true,
+          "video": true
+        },
+        "name": "wysiwyg_text",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Slug",
+        "locked": true,
+        "name": "slug",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "special classes",
+        "locked": false,
+        "name": "special_classes",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "customUrls": {
+      "listUrl": "#"
+    },
+    "individualMD5": "301f84971611caf8b68a7acd37be97de",
+    "listMD5": "d0c581865306884783563bfd923d374c",
+    "name": "index",
+    "oneOff": false
+  },
+  "introduction": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textarea",
+        "hidden": false,
+        "label": "Paragraph text",
+        "locked": false,
+        "name": "paragraph_text",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Slug",
+        "locked": true,
+        "name": "slug",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "name": "introduction",
+    "oneOff": true,
+    "oneOffMD5": "a48f51514ba7575c6b89eb99e501322b"
+  },
+  "tags": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "image",
+        "hidden": false,
+        "label": "Image",
+        "locked": false,
+        "name": "image",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "markdown",
+        "hidden": false,
+        "label": "Description",
+        "locked": false,
+        "name": "description",
+        "placeholder": "",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "relation",
+        "hidden": true,
+        "label": "Articles",
+        "locked": false,
+        "meta": {
+          "contentTypeId": "articles",
+          "reverseName": "tags"
+        },
+        "name": "articles",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Slug",
+        "locked": true,
+        "name": "slug",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "individualMD5": "e3e9228330279ab206ab78db2bbd430a",
+    "listMD5": "ab4d2a7a27bdfe87ec218069acd9ef7f",
+    "name": "tags",
+    "oneOff": false
+  }
+}
